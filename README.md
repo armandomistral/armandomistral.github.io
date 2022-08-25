@@ -2,6 +2,7 @@
 
 ## Online Editor
 
+- [Public URL](https://armandomistral.github.io)
 - [Online Editor](https://github.dev/armandomistral/armandomistral.github.io/)
 
 ## Useful Links
