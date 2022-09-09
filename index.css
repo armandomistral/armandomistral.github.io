@@ -1,8 +1,8 @@
 body {
-  font-family: 'IBM Plex Sans', monospace;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .content a {
 @apply decoration-red-900;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
