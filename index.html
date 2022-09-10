@@ -20,10 +20,9 @@
     }
   </script>
   <style type="text/tailwindcss">
-    @layer utilities {
-      .content-auto {
-        content-visibility: auto;
-        background-color: brown;
+    @layer components {
+      .header {
+        @apply p-10 flex flex-none bg-rose-200;
       }
     }
   </style>
@@ -32,7 +31,7 @@
 <body class="text-2xl md:text-3xl leading-relaxed text-clifford">
 
   <div class="wrapper">
-  <div class="header p-10 flex flex-none component-lg component-sm content-auto">
+  <div class="header">
   <span class="text-base">Nico Dreher: Product Designer & User Experience Designer in Zurich, Switzerland</span>
   </div>
   <div class="content p-10 pr-[30%] grow">
