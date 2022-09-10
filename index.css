@@ -1,11 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-
-html, body {
-  font-family: 'IBM Plex Sans', sans-serif;
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src:  url("assets/fonts/IBMPlexSans-Regular.woff2") format('woff2'),
+        url("assets/fonts/IBMPlexSans-Medium.woff2") format('woff2')
 }
 
-.content a {
-@apply decoration-red-900;
-  /*text-decoration: underline;*/
+body {
+  font-family: 'IBM Plex Sans', monospace;
+  height: 100vh;  
+}
+.wrapper {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  overflow: scroll;
+}
+
+@layer components {
+  .component-lg {
+    @apply bg-red-500 text-3xl; 
+  }
+
+  .component-sm {
+    @apply bg-green-500 text-sm;
+  }
+}
+
+.nico {
+  @apply bg-green-500;
 }

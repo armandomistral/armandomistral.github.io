@@ -8,14 +8,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Nico Dreher: User Experience & Product Designer in Zurich, Switzerland</title>
-  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+        background-color: brown;
+      }
+    }
+  </style>
 </head>
 
-<body class="flex-1 text-3xl leading-relaxed">
-  <div class="p-10 flex">
+<body class="text-2xl md:text-3xl leading-relaxed text-clifford">
+
+  <div class="wrapper">
+  <div class="header p-10 flex flex-none component-lg component-sm content-auto">
   <span class="text-base">Nico Dreher: Product Designer & User Experience Designer in Zurich, Switzerland</span>
   </div>
-  <div class="p-10 max-w-[66%]">
+  <div class="content p-10 pr-[30%] grow">
     <p class="mb-8">
       Hello, I'm <a href"#" class="underline decoration-2">Nico</a>, a Product and UX Designer, and collaboration enthusiast believing in the creative formula of 1 + 1 = 3.</p>
     <p class="mb-8">I facilitate a collaborative design practice to make solution ideas tangible and to create alignment around the
@@ -24,10 +44,11 @@
     <p class="mb-8">
       Work samples include the decentralized finance app →&nbsp;<a href="centrifuge-app.html" class="underline decoration-2">Centrifuge&nbsp;App</a>, the →&nbsp;<a href="#" class="underline decoration-2">Fabric&nbsp;Design&nbsp;System</a>, and the Appway Platform's →&nbsp;<a href="#" class="underline decoration-2">One-click&nbsp;Deployment</a>.|
   </div>
-  <div class="p-10 flex flex-row justify-end space-x-8 items-center">
+  <div class="footer p-10 flex flex-row justify-end space-x-8 items-center flex-none">
     <a href="https://www.linkedin.com/in/nico-dreher" class="underline decoration-2">LinkedIn</a>&nbsp;↗
     <a href="mailto:nico.dreher@gmail.com" class="bg-black px-8 py-3 rounded-full text-white hover:bg-indigo-500">Email me</a>
     </div>
+  </div>
 </body>
 
 </HTML>
